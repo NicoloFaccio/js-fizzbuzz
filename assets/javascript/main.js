@@ -6,5 +6,11 @@ for (let i=0 ; i<=100; i++){
     const Element =`<div class="col">${i}</div>`
     boxNumber.innerHTML+=Element
 
-    if(){}
+    if( (i % 3)===0 ){
+        const Element ="<div>Fizz</div>"
+        boxNumber.innerHTML+=Element
+    } else if( (i % 5)===0 ){
+        const Element ="<div>Buzz</div>"
+        boxNumber.innerHTML+=Element
+    }    
 }
