@@ -9,7 +9,7 @@ for (let i=1 ; i<=100; i++){
     } else if ( (i % 5)===0 ) {    
         const Element ="<div>Buzz</div>"
         boxNumber.innerHTML+=Element
-    } else if ( (i % 15)===0 ) {    
+    } else if ( ((i % 3)===0) && ((i % 5)===0) ) {    
         const Element ="<div>FizzBuzz</div>"
         boxNumber.innerHTML+=Element
     } else {
